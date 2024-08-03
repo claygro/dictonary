@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightblue;
+  margin: 0;
+}
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: rgb(0, 106, 101);
+  max-width: 500px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px rgb(0, 128, 122), inset 3px 5px 6px rgb(0, 128, 122);
+}
+.userInput {
+  width: 15rem;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  color: white;
+}
+.search {
+  padding: 10px 20px;
+  background-color: lightgreen;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px green, inset 3px 5px 6px green;
+  cursor: pointer;
+}
+.search:hover {
+  background-color: rgb(136, 213, 136);
+}
+.search:active {
+  background-color: rgb(115, 178, 115);
+}
+.top {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+.textandvolume {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.sound {
+  background: transparent;
+  border: none;
+}
+.result {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.word-meaning {
+  margin-top: 30px;
+}
+.word-example {
+  margin-top: 30px;
+}
+.result h2 {
+  color: white;
+}
+.inp {
+  background: linear-gradient(45deg, orange, yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+}
+.word-meaning {
+  color: white;
+}
+@media (max-width: 419px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0;
+  }
+}
